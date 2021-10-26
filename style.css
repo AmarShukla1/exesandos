@@ -9,9 +9,16 @@ body{
 display: flex;
 }
 .col{
+    
    height:100px;
    width:100px;
-   background-color: whitesmoke;
+   text-align: center;
+   
    border-style: inset;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 80px;
+   background-color:#f2e9f0;
 }
+
+
 
