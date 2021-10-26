@@ -1,7 +1,7 @@
 //implementing the basics
 
-const player = (name, turn) => {
-  return { name, turn };
+const player = (name,score) => {
+  return {name,score};
 };
 
 const gameboard = () => {
@@ -27,8 +27,9 @@ const gameboard = () => {
   return mygameboard;
 };
 
-first = player("first");
-second = player("second");
+first = player(prompt('enter your name'),0);
+//alert('do you want to play computer or a human opponent')
+second = player(prompt("enter opponent name"),0);
 board = gameboard();
 let turn = 1;
 let blocks_filled = 0;
@@ -72,7 +73,9 @@ const gamehandler = (e) => {
     }
   }
   if (checker(turn)) {
-    alert(`${turn} won`);
+    if(turn==1){kl=first}else{kl=second}
+    kl.score++;  
+    alert(`${kl.name} won and score is ${first.score}-${second.score}`);
     reset();
     return;
   }
