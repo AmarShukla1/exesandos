@@ -109,6 +109,7 @@ buttons.forEach(function (button) {
 });
 
 //TO DO:
-//minimax algo implement
+//minimax algo implement,its like recursion only...
+//work on display ui cause currently it is in alert mode.
+//refactor some code to make it clean as well
 
-//its like recursion only...
