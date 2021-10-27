@@ -71,7 +71,7 @@ const gamehandler = (e) => {
     else{
         e.target.innerText='O';
     }
-  }
+  
   if (checker(turn)) {
     if(turn==1){kl=first}else{kl=second}
     kl.score++;  
@@ -84,6 +84,7 @@ const gamehandler = (e) => {
     alert("tie");
     reset();
   }
+}
 };
 
 
